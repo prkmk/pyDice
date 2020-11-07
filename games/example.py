@@ -7,7 +7,7 @@ def example():
     inp = input("> ")
     if inp == "l" or inp == "L":
       return
-    elif inp.isdigit:
+    elif inp.isdigit() and int(inp) > 0:
       dices = []
       for i in range(int(inp)):
         dices.append(Dice())
