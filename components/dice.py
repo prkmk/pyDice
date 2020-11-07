@@ -12,6 +12,12 @@ class Dice:
     self.face = faces[self.value - 1]
     return self
 
+  def setValue(self, value):
+    if 1 <= value <= 6:
+      self.value = value
+      self.face = faces[self.value - 1]
+    return self
+
   def getValue(self):
     return self.value
   
