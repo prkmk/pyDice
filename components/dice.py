@@ -3,9 +3,10 @@ import random
 faces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"]
 
 class Dice:
-  def __init__(self):
+  def __init__(self, printFace = True):
     self.value = 1
     self.face = faces[self.value - 1]
+    self.printFace = printFace
 
   def shuffle(self):
     self.value = random.randint(1, 6)
@@ -22,4 +23,4 @@ class Dice:
     return self.value
   
   def getFace(self):
-    return self.face
+    return self.face if self.printFace else str(self.value)
