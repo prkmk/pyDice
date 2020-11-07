@@ -1,5 +1,5 @@
 # pyDice
-A simple dice class
+A simple dice class made with python
 
 Run with
 ```
